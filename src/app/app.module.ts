@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-//import {FormsModule} from "@angular/forms"; // import ngModel
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {ServerComponent} from "./server/server.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // Register this new component to be scanned by Angular.
+    ServerComponent
   ],
     imports: [
-        BrowserModule,
-      // import some form feature
-        //FormsModule
+      BrowserModule,
+      FormsModule,
+      HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
