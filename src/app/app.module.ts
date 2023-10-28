@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {ServerComponent} from "./server/server.component";
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // Register this new component to be scanned by Angular.
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
     imports: [
       BrowserModule,

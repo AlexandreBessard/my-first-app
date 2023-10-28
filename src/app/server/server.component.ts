@@ -6,5 +6,11 @@ import {Component} from "@angular/core";
 })
 // Component is like a typescript class
 export class ServerComponent {
+  serverId: number = 10;
+  serverStatus: string = "offline";
 
+
+  getServerStatus(): string {
+    return this.serverStatus;
+  }
 }
