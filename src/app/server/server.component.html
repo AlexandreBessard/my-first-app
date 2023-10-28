@@ -1,1 +1,5 @@
-<p>{{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<!-- applying css classes dynamically with ngClass, add online class as CSS, use the css class name: online -->
+<!-- attached online CSS class to this paragraph -->
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}"
+>{{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
